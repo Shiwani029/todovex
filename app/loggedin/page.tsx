@@ -2,7 +2,7 @@ import Tasks from "@/components/todovex/tasks";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { signOutAction } from "@/actions/auth-actions";
-import UserProfile from "@/components/todovex/user-profile";
+import UserProfile from "@/components/nav/user-profile";
 
 export default function LoggedInPage() {
   return (

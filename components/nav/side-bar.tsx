@@ -10,7 +10,7 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { primaryNavItems } from "@/utils";
-import UserProfile from "@/components/todovex/user-profile";
+import UserProfile from "@/components/nav/user-profile";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { api } from "@/convex/_generated/api";

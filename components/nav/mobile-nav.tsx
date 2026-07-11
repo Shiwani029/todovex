@@ -13,7 +13,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { primaryNavItems } from "@/utils";
 import Image from "next/image";
 import SearchForm from "./search-form";
-import UserProfile from "@/components/todovex/user-profile";
+import UserProfile from "@/components/nav/user-profile";
 
 import todovexLogo from "@/public/logo/todovex.svg";
 
