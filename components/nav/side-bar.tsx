@@ -10,15 +10,14 @@ import {
     CardTitle,
 } from "@/components/ui/card";
 import { primaryNavItems } from "@/utils";
-import UserProfile from "./user-profile";
+import UserProfile from "@/components/todovex/user-profile";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { api } from "@/convex/_generated/api";
 import { useQuery } from "convex/react";
 import { useEffect, useState } from "react";
-import { Hash, PlusIcon } from "lucide-react";
+import { Hash } from "lucide-react";
 import { Doc } from "@/convex/_generated/dataModel";
-import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import AddProjectDialog from "../projects/add-project-dialog";
 import AddLabelDialog from "../labels/add-label-dialog";
 
@@ -106,15 +105,7 @@ export default function SideBar() {
                                         </div>
                                     </Link>
                                     {id === "filters" && (
-                                        <Dialog>
-                                            <DialogTrigger id="closeDialog">
-                                                <PlusIcon
-                                                    className="h-5 w-5"
-                                                    aria-label="Add a Label"
-                                                />
-                                            </DialogTrigger>
-                                            <AddLabelDialog />
-                                        </Dialog>
+                                        <AddLabelDialog />
                                     )}
                                 </div>
                             </div>
