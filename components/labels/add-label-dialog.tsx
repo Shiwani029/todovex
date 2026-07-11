@@ -21,13 +21,13 @@ import React from "react";
 export default function AddLabelDialog() {
   const [name, setName] = useState("");
   const [open, setOpen] = useState(false);
-  const addLabel = useMutation(api.labels.addLabel);
+  const createALabel = useMutation(api.labels.createALabel);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) return;
     try {
-      await addLabel({ name: name.trim() });
+      await createALabel({ name: name.trim() });
       setName("");
       setOpen(false);
     } catch (err) {

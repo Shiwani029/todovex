@@ -26,7 +26,7 @@ export default function SearchForm() {
                     <FormField
                         control={form.control}
                         name="searchText"
-                        render={({ field }) => (
+                        render={({ field }: { field: any }) => (
                             <FormItem className="w-full">
                                 <FormControl>
                                     <Input

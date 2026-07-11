@@ -9,7 +9,7 @@ import {
     DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Button } from "../ui/button";
-import { signOutAction } from "@/actions/auth-action";
+import { signOutAction } from "@/actions/auth-actions";
 
 export default function UserProfile() {
     const session = useSession();
